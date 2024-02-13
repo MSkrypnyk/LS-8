@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.5s all ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.welcome {
+  background: #f8f8f8;
+  padding: 0 230px 211px 135px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-description {
+  margin-top: 100px;
+}
+
+.sub-title {
+  color: #161515;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 53px;
+}
+
+.welcome-title {
+  color: #272727;
+  font-size: 250px;
+  font-weight: 300;
+  margin-bottom: 43px;
+}
+
+.welcome-text {
+  color: #161515;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 61px;
+  max-width: 575px;
+  width: 100%;
+}
+
+.buy-watch {
+  display: flex;
+  text-align: center;
+}
+
+.buy-watch__button {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #161515;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 29px;
+  padding: 26px 74px 35px 73px;
+  max-height: 82px;
+  transition: 0.5s all ease-in-out;
+}
+
+.buy-watch__button:hover {
+  transform: translateX(-3px);
+  background-color: #383838;
+}
+
+.buy-watch__price {
+  color: #272727;
+  background-color: #ffffff;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 60px;
+  padding: 13px 27px 31px 28px;
+  max-height: 82px;
+}
+
+.models {
+  background: #ffffff;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 142px;
+}
+
+.popular {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+.models-title {
+  color: #000000;
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 84px;
+}
+
+.models-img {
+  background-color: #f8f8f8;
+  padding: 110px 60px 110px 71px;
+  margin-bottom: 67px;
+}
+
+.models-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.models-sub-title {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+
+.models-text {
+  color: #161515;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 50px;
+  max-width: 532px;
+  width: 100%;
+  margin-bottom: 85px;
+}
+
+.text-sw12 {
+  max-width: 510px;
+  width: 100%;
+  margin-bottom: 113px;
+}
+
+.product-description {
+  color: #161515;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 58px;
+  display: inline-block;
+  position: relative;
+}
+
+.product-description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #707070;
+  width: calc(100% - 72px);
+  height: 1px;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-description__text {
+  color: #161515;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 41px;
+  max-width: 515px;
+  width: 100%;
+}
+
+.more-detailed {
+  color: #bb8b5d;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+}
+
+.more-detailed:hover {
+  transform: scale(1.05);
+}
+
+.more-detailed::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #bb8b5d;
+  width: 100%;
+  height: 1px;
+  bottom: 12px;
+}
+
+@media screen and (max-width: 1048px) {
+  .welcome-description {
+    margin-top: 50px;
+  }
+
+  .welcome {
+    padding: 0 115px 105px 67px;
+  }
+  .welcome-title {
+    font-size: 130px;
+  }
+  .buy-watch__button {
+    font-size: 28px;
+  }
+  .buy-watch__price {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .welcome {
+    padding: 0 115px 100px 73px;
+    gap: 30px;
+  }
+  .buy-watch__button {
+    font-size: 23px;
+    padding: 12px 32px;
+    max-height: 50px;
+  }
+  .buy-watch__price {
+    font-size: 23px;
+    max-height: 60px;
+    padding: 0px 7px;
+    max-height: 50px;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .welcome-img {
+    max-width: 300px;
+    width: 100%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .welcome {
+    padding: 0 30px 50px 30px;
+    gap: 30px;
+  }
+
+  .welcome-description {
+    margin-top: 50px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    margin-bottom: 27px;
+  }
+
+  .welcome-title {
+    font-size: 75px;
+    margin-bottom: 21px;
+  }
+
+  .welcome-text {
+    font-size: 23px;
+    margin-bottom: 30px;
+    line-height: 40px;
+  }
+
+  .buy-watch__button {
+    font-size: 20px;
+  }
+  .buy-watch__price {
+    font-size: 20px;
+  }
+
+  .models {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .popular {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .models-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .models-img {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  .models-sub-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .models-text {
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .text-sw12 {
+    margin-bottom: 50px;
+  }
+
+  .product-description {
+    font-size: 23px;
+    margin-bottom: 27px;
+  }
+
+  .product-description__text {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .more-detailed::before {
+    bottom: 7px;
+  }
+}
